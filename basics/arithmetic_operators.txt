@@ -1,0 +1,44 @@
+package basics
+
+import "fmt"
+
+func main() {
+	// Variables declaration
+
+	var a, b int = 10, 3
+	var result int = a + b
+
+	fmt.Println("Addition:", result)
+
+	result = a - b
+	fmt.Println("Subtraction:", result)
+
+	result = a * b
+	fmt.Println("Multiplication:", result)
+
+	result = a / b
+	fmt.Println("Division:", result)
+
+	result = a % b
+	fmt.Println("Remainder:", result)
+
+	const c float64 = 22 / 7
+	fmt.Println(c)
+	fmt.Printf("%T\n", c)
+
+	// Overflow with signed integers
+	var maxInt int64 = 9223372036854775807 // max value that int 64 can hold
+	fmt.Println("1 maxInt", maxInt)
+	maxInt++
+	fmt.Println("2 maxInt", maxInt)
+
+	// Overflow with unsigned integers
+	var uMaxInt uint64 = 18446744073709551615 // max value that uint 64 can hold
+	fmt.Println("1 uMaxInt", uMaxInt)
+	uMaxInt++
+	fmt.Println("2 uMaxInt", uMaxInt)
+
+	// // Overflow with floating point numbers
+	// var maxFloat float64 = 1.797693134862315708145274237317043567981e+308
+	// fmt.Println("1 maxFloat", maxFloat)
+}
