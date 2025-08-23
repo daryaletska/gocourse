@@ -1,0 +1,39 @@
+package basics
+
+import "fmt"
+
+func main() {
+	// Logical operators
+	fmt.Println(true && true)
+	fmt.Println(true && false)
+	fmt.Println(true || true)
+	fmt.Println(true || false)
+	fmt.Println(!true)
+	fmt.Println(!false)
+
+	// Bitwise operators	
+	fmt.Println(10 & 5)
+	fmt.Println(10 | 5)
+	fmt.Println(10 ^ 5)
+	fmt.Println(10 << 1)
+	fmt.Println(10 >> 1)
+
+	// comparison operators
+	fmt.Println(10 == 5)
+	fmt.Println(10 != 5)
+	fmt.Println(10 > 5)
+	fmt.Println(10 < 5)
+	fmt.Println(10 >= 5)
+	fmt.Println(10 <= 5)
+
+	// assignment operators
+	fmt.Println(10 += 5)
+	fmt.Println(10 -= 5)
+	fmt.Println(10 *= 5)
+	fmt.Println(10 /= 5)
+	fmt.Println(10 %= 5)
+
+	// increment and decrement operators
+	fmt.Println(10++)
+	fmt.Println(10--)
+}
