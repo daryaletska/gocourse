@@ -1,0 +1,23 @@
+package main
+
+import "fmt"
+
+func main() {
+	day := "Monday"
+
+	switch true {
+	case day == "Monday":
+		fmt.Println("Today is Monday")
+		fallthrough
+	case day == "Tuesday":
+		fmt.Println("Today is Tuesday")
+		fallthrough
+	case day == "Wednesday":
+		fmt.Println("Today is Wednesday")
+	case day == "Thursday":
+		fmt.Println("Today is Thursday")
+	default:
+		fmt.Println("Today is not a weekday")
+	}
+
+}
